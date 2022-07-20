@@ -1,0 +1,38 @@
+@import "colors.scss";
+@import "variables.scss";
+@import "mixins.scss";
+@import "cdn.scss";
+@import "/src/scss/components/header.scss";
+@import "./components/stages-columns.scss";
+@import "./components/card-window.scss";
+@import "./components/warning-window.scss";
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Raleway';
+
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Open Sans', 'Raleway', sans-serif;
+}
+
+
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
+.open-card__close {
+  border: none;
+}
+

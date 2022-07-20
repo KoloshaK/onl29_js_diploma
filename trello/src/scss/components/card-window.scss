@@ -1,0 +1,97 @@
+.card-form {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   z-index: 9000;
+   display: block;
+   width: 370px;
+   border-radius: 8px;
+   overflow: hidden;
+   background-color: $lightsilver;
+}
+
+.card-modal__content{
+   padding: 20px;
+}
+
+.card-modal__input-title{
+   margin-bottom: 15px;
+   
+}
+
+#card-modal__input-title{
+   line-height: 20px;
+   font-size: $_12px;
+   text-align: center;
+   border-radius: 8px;
+   display: block;
+   width: 50%;
+   border: none;
+   padding: 5px 10px;
+  
+}
+.card-modal__textarea-desc{
+   margin-bottom: 15px;
+}
+#card-modal__textarea-desc{
+   line-height: 20px;
+   font-size: $_12px;
+   text-align: center;
+   border-radius: 8px;
+   display: block;
+   width: 100%;
+   border: none;
+   padding: 5px 10px;
+   resize: none;
+}
+.card__avatar{
+   margin-bottom: 15px;
+   
+}
+#card-avatar{
+   display: block;
+   color: $lightsilver;
+   border: none;
+   padding: 5px 10px;
+   width: 50%;
+}
+
+.card-modal__footer{
+   display: flex;
+   justify-content: space-between;
+}
+.card-modal__button--save{
+   display: block;
+   width: 40%;
+   border: none;
+   font-size: $_15px;
+   line-height: 30px;
+   text-align: center;
+   color: $lightsilver;
+   background-color: $white;
+   transition: 0.5s ease;
+   cursor: pointer;
+   border-radius: 8px;
+
+   &:hover {
+      transform: scale(0.9);
+   }
+}
+.card-modal__button--cancel{
+   display: block;
+   width: 40%;
+   border: none;
+   font-size: $_15px;
+   line-height: 30px;
+   text-align: center;
+   color: $lightsilver;
+   background-color: $white;
+   transition: 0.5s ease;
+   cursor: pointer;
+   border-radius: 8px;
+
+   &:hover {
+      transform: scale(0.9);
+   }
+}

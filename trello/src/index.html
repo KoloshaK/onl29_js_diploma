@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./scss/index.scss">
+  <title>Trello Clone</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="header__title">Trello</h1>
+  </header>
+
+  <div class="stages-columns">
+    <div id="1" class="stages-column--item">
+      <div class="stages-column__header">
+        <h3 class="stages-column__title">TODO</h3>
+        <span class="todo-count">0</span>
+
+        
+
+      </div>
+
+      <div id="todo-stage" class="stages-column__cards">
+        <button id="create-card" class="stages-column__create-btn">
+          Create Card
+        </button>
+      </div>
+    </div>
+
+    
+    <div id="2" class="stages-column--item">
+      <div class="stages-column__header">
+        <h3 class="stages-column__title">IN PROGRESS</h3>
+        <span class="todo-count">0</span>
+        
+      </div>
+      <div class="stages-column__cards">
+
+      </div>
+    </div>
+
+    
+    <div id="3" class="stages-column--item">
+      <div class="stages-column__header">
+        <h3 class="stages-column__title">DONE</h3>
+        <span class="todo-count">0</span>
+      </div>
+      <div class="stages-column__cards"></div>
+      <button id="delete-all-btn" class="stages-column__delete-btn">
+        Delete all
+      </button>
+    </div>
+  </div>
+
+  
+  <div id="wrap-confirm-modal" class="modal__wrap">
+    <div id="deleteWindow" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Warning!</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">
+            <button id="modal-yes" class="btn modal-btn">confirm</button>
+            <button id="modal-no" class="btn modal-btn">cancele</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="wrap-warning-modal" class="modal__wrap">
+    <div id="warning-modal" class="modal-warning">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Too many active cases. Complete at least one to start a new one.</h3>
+          </div>
+          <div class="modal-body">
+            <button class="card-modal__button--cancel" type="button" id="warning-cancel-btn">OK</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <div id="wrap-card-modal" class="modal__wrap">
+    <form id="card-form" class="card-modal">
+      <div class="card-modal__content">
+        <div class="card-modal__body">
+          <input id="card-modal__input-title" class="card-modal__input-title" type="text" class="modal__body--title"
+            minlength="1" maxlength="100" size="41" placeholder="title">
+          <textarea id="card-modal__textarea-desc" class="card-modal__textarea-desc" name="text"
+            class="modal__body--description" minlength="1" maxlength="350" rows="8" cols="50"
+            placeholder="description"></textarea>
+          <select id="card-avatar" class="card__avatar">
+            <option>user</option>
+          </select>
+        </div>
+        <div class="card-modal__footer">
+          <button class="card-modal__button--save" type="submit" id="create-btn">confirm</button>
+          <button class="card-modal__button--cancel" type="button" id="cancel-btn">cancel</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+
+
+  <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
